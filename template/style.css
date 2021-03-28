@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /* 16px x 62.5 = 10rpx = 1rem */
+}
+
+body{
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+h1{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+h2{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
+}
+header{
+    grid-area: header;
+    background: black;
+}
+header a{
+    color: white;
+}
+a.brand{
+    font-size: 3rem;
+    font-weight: bold;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    background: black;
+    color: white;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row.center{
+    justify-content: center;
+}
+
+img.medium{
+    width: 100%;
+    max-width: 29rem;
+}
+
+.card{
+    border: 0.1rem solid gray;
+    margin: 1rem;
+}
+
+.card_container{
+    padding: 1rem;
+}
+
+.card_container > *{
+    margin-bottom: 0.5rem;
+}
+
+.price{
+    font-size: 2rem;
+}
+
+
+
+.rating span{
+    margin: 0.1rem;
+}

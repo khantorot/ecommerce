@@ -1,0 +1,181 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+}
+#root {
+  height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+header {
+  grid-area: header;
+  background-color: black;
+}
+
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+}
+
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+h2 {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  margin-top: 1rem;
+}
+input,
+select,
+textarea,
+button {
+  padding: 1rem;
+  border: 0.1rem black solid;
+  font-size: 1.6rem;
+}
+button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+input:hover,
+select:hover,
+textarea:hover,
+button:hover {
+  border: 0.1rem gray solid;
+}
+button.primary {
+  background-color: blue;
+}
+button.block {
+  width: 100%;
+}
+
+header a {
+  color: white;
+  padding: 1rem;
+}
+a.brand {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.badge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.6rem;
+  font-size: 1.4rem;
+  margin-left: 0.3rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.row.center {
+  justify-content: center;
+}
+.row.top {
+  align-items: flex-start;
+}
+.col-1 {
+  flex: 1 1 25rem;
+}
+.col-2 {
+  flex: 2 1 50rem;
+}
+.min-30 {
+  min-width: 30rem;
+}
+
+img.small {
+  max-width: 5rem;
+  width: 100%;
+}
+img.medium {
+  max-width: 29rem;
+  width: 100%;
+}
+img.large {
+  width: 100%;
+}
+
+.card {
+  border: 0.1rem solid gray;
+  margin: 1rem;
+}
+.card-body {
+  padding: 1rem;
+}
+.card-body > * {
+  margin-bottom: 0.5rem;
+}
+.price {
+  font-size: 2rem;
+}
+.rating span {
+  margin: 0.1rem;
+}
+.rating span:last-child {
+  color: black;
+  margin-left: 10px;
+}
+.success {
+  color: green;
+}
+.danger {
+  color: red;
+}
+.alert {
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  background-color: pink;
+}
+.alert-info {
+  color: gray;
+}
+.alert-danger {
+  color: red;
+}
